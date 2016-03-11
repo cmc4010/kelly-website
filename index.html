@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Scrolling Nav - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="kelly_css/unidesign.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://fiddle.jshell.net/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="http://fiddle.jshell.net/css/result-light.css">
+    <link href="kelly_css/scrolling-nav.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+     <style type="text/css">
+      * {
+      padding: 0px;
+      margin: 0px;
+      }
+      body {
+        overflow: scroll;
+      }
+      #slideout_menubar {
+          width:100%;
+          background-color:#444;
+          color: #fff;
+          padding: 10px;
+          text-align: right;
+      }
+      .slideout_button {
+          cursor:pointer;
+          padding:auto;
+      }
+      #slideout_menu, #slideout_left {
+          display:inline;
+      }
+      #slideout_menu li a {
+          padding: 10px;
+          display: block;
+          color: white;
+          text-decoration: none;
+      }
+      #slideout_left {
+          width:100%;
+          background-color: #fff;
+          z-index: 5;
+          right: 0px;
+          height: 100%;
+          position: absolute;
+          -webkit-box-shadow:  -5px 0px 4px 0px rgba(0, 0, 0, 0.2);
+              moz-box-shadow:  -5px 0px 4px 0px rgba(0, 0, 0, 0.2);
+                o-box-shadow:  -5px 0px 4px 0px rgba(0, 0, 0, 0.2);
+                  box-shadow:  -5px 0px 4px 0px rgba(0, 0, 0, 0.2);
+      }
+      #slideout_left p {
+          padding: 10px;
+      }
+      #slideout_menu {
+          right:0px;
+          z-index: 0;
+          width: 250px;
+          text-align: right;
+          position: fixed;
+      } 
+      #slideout_menu li {
+          background-color:green;
+          border-bottom: 1px solid #888;
+      }
+      .myTopNavbar{
+          background-color:#750000;
+
+      }
+      .myTopNavbar a{
+          color: white!important;
+          font-size: 20px;
+      }
+      .intro-section .myCenter {
+          position: absolute;
+          left: 0;
+          top: 40%;
+          width: 100%;
+          color: white;
+          text-align: center;
+          font-size: 30px;
+      }
+      .about-section .myCenter {
+          border-style: solid;
+          position: absolute;
+          left: 50px;
+          top: 130%;
+          width: 50%;
+          height: 50%;
+          color: #BEBEBE;
+          background-color:  #804040;
+          opacity: 1;
+          text-align: center;
+          font-size: 30px;
+          border-radius: 20px; 
+      }
+      .process-section .myCenter {
+          border-style: solid;
+          position: absolute;
+          left: 50px;
+          top: 330%;
+          width: 50%;
+          height: 50%;
+          color: #BEBEBE;
+          background-color:  #804040;
+          opacity: 1;
+          text-align: center;
+          font-size: 30px;
+          border-radius: 20px; 
+      }
+      .navbar-brand > img {
+         margin-top: -8px !important;
+         max-height: 180%;
+         height: 180%;
+         width: auto;
+         margin: 0 auto;
+         /* probably not needed anymore, but doesn't hurt */
+         -o-object-fit: contain;
+         object-fit: contain; 
+
+      }
+      .myGrayScale {
+         -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+         filter: grayscale(100%);
+         width: 100%;
+         height: 100%;
+      }
+      .myCollapse {
+          display: none !important;
+      } 
+      .carousel,
+      .item,
+      .active {
+          height: 100%;
+      }
+
+      .carousel-inner {
+          height: 100%;
+      }
+
+      /* Background images are set within the HTML using inline CSS, not here */
+
+      .fill {
+          width: 100%;
+          height: 80%;
+          background-position: center;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          background-size: cover;
+          -o-background-size: cover;
+      }
+      .fill_control {
+          height: 80%;
+      }
+      .carousel-control .icon-next {
+          margin-top: -50px;
+          font-size: 100px;
+      }
+      .carousel-control .icon-prev {
+          margin-top: -50px;
+          font-size: 100px;
+      }
+      .item div{
+          border: solid #aaa 2px;
+          background-color:   #A6373F;
+          border-radius: 10px;
+      }
+      .item h2, h3, h4 {
+          color: white;
+          text-shadow: none;
+      }
+      .header {
+        color: #36A0FF;
+        font-size: 27px;
+        padding: 10px;
+      }
+
+      .bigicon {
+          font-size: 35px;
+          color: #36A0FF;
+      }
+    </style>
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".myScrollspy">
+
+   <!--navigation bar start -->
+    <nav class="navbar navbar-default navbar-fixed-top myTopNavbar" role="navigation">
+      <div class="container">
+        <div class="navbar-header page-scroll">
+          <button onclick="myNavSlider()" type="button"  class="slideout_button navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#page-top" class="navbar-brand page-scroll"><img src="images/logo_transparent1.png" style></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse myScrollspy myCollapse">
+          <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#product">Product</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#process">Process</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!--navigation bar end -->
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav id="slideout_menu" class="myScrollspy">
+          <ul class="nav nav-pills nav-stacked">
+            <li><a href="#">Blank one </a> </li>
+            <li><a href="#intro">Intro</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div id="slideout_left">
+           <!-- Intro Section -->
+          <section id="intro" class="intro-section">
+              <div class="container-fluid myFullHeight">
+                  <div class="row intro-section-inner">
+                      <!-- <img src="images/meat2.jpg" class="intro_background_img" alt="longanPic"> -->
+                      <div class="col-lg-12 myCenter">
+                          <h1>MR. GAY?</h1>
+                          <p>DAVID CHANG - THE PUSSY CAT</p>
+                          <a class="btn btn-default page-scroll" href="#about">Agree!</a>
+                      </div>
+                  </div>
+              </div>
+          </section>
+          <!-- About Section -->
+          <section id="about" class="about-section">
+              <div class="container-fluid">
+                  <div class="row">
+                      <div class="col-lg-12 myCenter">
+                          <h1>About Section</h1>
+                      </div>
+                  </div>
+              </div>
+          </section>
+         <!-- Product Section -->
+          <section id="product" class="product-section">
+              <!-- <div class="container-fluid "> -->
+                <header id="myCarousel" class="carousel slide">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators" style="top:70%">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for Slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <!-- Set the first background image using inline CSS below. -->
+                            <div class="fill" style="background-image:url('images/meat1.jpg')"></div>
+                            <div class="carousel-caption">
+                                <h2>Caption 1</h2>
+                                <br>
+                                <h3>yeeeeee<h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <!-- Set the second background image using inline CSS below. -->
+                            <div class="fill" style="background-image:url('images/meat2.jpg')"></div>
+                            <div class="carousel-caption">
+                                <h2>Caption 2</h2>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <!-- Set the third background image using inline CSS below. -->
+                            <div class="fill" style="background-image:url('images/meat3.jpg')"></div>
+                            <div class="carousel-caption">
+                                <h2>Caption 3</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control fill_control" href="#myCarousel" data-slide="prev">
+                        <span class="icon-prev"></span>
+                    </a>
+                    <a class="right carousel-control fill_control" href="#myCarousel" data-slide="next">
+                        <span class="icon-next"></span>
+                    </a>
+                </header>
+              <!-- </div> -->
+          </section>
+          <!-- Process Section -->
+          <section id="process" class="process-section">
+              <div class="container-fluid">
+                  <div class="row">
+                      <div class="col-lg-12  myCenter">
+                          <h1>Process Section</h1>
+                      </div>
+                  </div>
+              </div>
+          </section>
+          <!-- Contact Section -->
+          <section id="contact" class="contact-section">
+              <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="well well-sm">
+                            <form class="form-horizontal" method="post">
+                                <fieldset>
+                                    <legend class="text-center header">Contact us</legend>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                        <div class="col-md-8">
+                                            <input id="fname" name="name" type="text" placeholder="First Name" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                        <div class="col-md-8">
+                                            <input id="lname" name="name" type="text" placeholder="Last Name" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                                        <div class="col-md-8">
+                                            <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                                        <div class="col-md-8">
+                                            <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                                        <div class="col-md-8">
+                                            <textarea class="form-control" id="message" name="message" placeholder="Enter your massage for us here. We will get back to you within 2 business days." rows="7"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-md-12 text-center">
+                                            <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+
+          <footer class="col-xs-12">
+            <p>&copy;2016 Kelly Agro-Products Co., Ltd. All Rights Reserved. </p>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+    <!-- Scrolling Nav JavaScript -->
+    <script src="kelly_js/jquery.easing.min.js"></script>
+    <script src="kelly_js/scrolling-nav.js"></script>
+
+    <script type='text/javascript'>//<![CDATA[
+    function myNavSlide() {
+      $('#slideout_left').animate({ right: 250 }, 'slow', function() {
+          //$('#slideout_button_a').html('Close');
+      });
+    } 
+    function myNavReset() {
+        $('#slideout_left').animate({ right: 0 }, 'slow', function() {
+            //$('#slideout_button_a').html('Menu');
+        });
+    }
+
+    function myNavSlider(){
+        if( $("#slideout_left").css('right') == "0px"){
+           myNavSlide();    
+        } else if ($("#slideout_left").css('right') == "250px"){
+          myNavReset();
+        }    
+    }
+    
+    function reset_slideout() {
+        $('#slideout_left').animate({ right: 0 }, 'slow', function() {
+            $('#slideout_button_a').html('Menu');
+        });
+    }
+      
+    $(window).resize(function() {
+        var w = $(window).width();
+        if( w > 768) {
+          reset_slideout();
+        }
+    });
+    </script>
+</body>
+
+</html>
