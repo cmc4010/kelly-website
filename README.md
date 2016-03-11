@@ -4,9 +4,9 @@
 
 ## Credits (tools and libraries used)
 
-*[jQuery](https://jquery.com/)
-*[Bootstrap](http://getbootstrap.com/)
-*[Start Bootstrap](http://startbootstrap.com/)
+* [jQuery](https://jquery.com/)
+* [Bootstrap](http://getbootstrap.com/)
+* [Start Bootstrap](http://startbootstrap.com/)
 
 ## Copyright and License
 
