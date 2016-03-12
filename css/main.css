@@ -1,4 +1,3 @@
-
 * {
   padding: 0px;
   margin: 0px;
@@ -72,21 +71,21 @@ body {
   border-style: solid;
   position: absolute;
   left: 50px;
-  top: 130%;
+  top: 30%;
   width: 50%;
   height: 50%;
   color:  #F0F0F0;
-  background-color:  #804040;
+  background-color: #804040;
   opacity: 1;
   text-align: center;
   font-size: 30px;
-  border-radius: 20px; 
+  border-radius: 10px; 
 }
 .process-section .myCenter {
   border-style: solid;
   position: absolute;
   left: 50px;
-  top: 330%;
+  top: 30%;
   width: 50%;
   height: 50%;
   color:  #F0F0F0;
@@ -94,7 +93,7 @@ body {
   opacity: 1;
   text-align: center;
   font-size: 30px;
-  border-radius: 20px; 
+  border-radius: 10px; 
 }
 .navbar-brand > img {
  margin-top: -8px !important;
@@ -143,12 +142,12 @@ body {
 }
 
 .carousel-control .icon-next {
-  margin-top: -50px;
+  top: 52% !important;
   font-size: 100px;
 }
 
 .carousel-control .icon-prev {
-  margin-top: -50px;
+  top: 52% !important;
   font-size: 100px;
 }
 
@@ -172,7 +171,7 @@ body {
 
 .bigicon {
   font-size: 35px;
-  color: #36A0FF;
+  color: #FF8000;
 }
 
 .currentPage {
@@ -191,6 +190,33 @@ body {
     }
 }
 
+/*button*/
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+ 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+ 
+.btn-primary {
+    background: #FF9224;
+    color: #ffffff;
+}
+ 
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #FF8000;
+}
+ 
+.btn-primary:active, .btn-primary.active {
+    background: #EA7500 !important;
+    box-shadow: none;
+}
+/*button*/
 footer {
   position: absolute;
   border-top: solid 1px grey;
