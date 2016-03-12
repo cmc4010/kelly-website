@@ -31,10 +31,6 @@ $(window).resize(function() {
   }
 });
 
-function myScrollTo(hash) {
-  location.hash = "#" + hash;
-}
-
 ////////// SMOOTH SCROLLING //////////
 
     // SCROLL EVENT var //
@@ -42,6 +38,10 @@ function myScrollTo(hash) {
     var currentScrollTop = 0; // current position of view
     var lastCall = 0; // time of last call
 
+function myScrollTo(hash) {
+  location.hash = "#" + hash;
+}    
+    
     $(window).scroll(function(){
       var now = Date.now();
 
@@ -59,14 +59,18 @@ function myScrollTo(hash) {
                animateScrollTop( $('#intro').offset().top, 300, 'intro');
                //myScrollTo('intro');
                lastScrollTop = $('#intro').offset().top;
-             } else if ( location.hash == '#services') {
+             } else if ( location.hash == '#product') {
                animateScrollTop( $('#about').offset().top , 300, 'about');
                //myScrollTo('about');
                lastScrollTop = $('#about').offset().top;
-             } else if (location.hash == '#contact') {
-               animateScrollTop( $('#services').offset().top , 300, 'services');
+             } else if ( location.hash == '#process') {
+               animateScrollTop( $('#product').offset().top , 300, 'product');
+               //myScrollTo('about');
+               lastScrollTop = $('#product').offset().top;
+             }  else if (location.hash == '#contact') {
+               animateScrollTop( $('#process').offset().top , 300, 'process');
                //myScrollTo('services');
-               lastScrollTop = $('#services').offset().top;
+               lastScrollTop = $('#process').offset().top;
              } else {
               alert('something went wrong 1');
             }
@@ -76,14 +80,18 @@ function myScrollTo(hash) {
                //myScrollTo('about');
                lastScrollTop = $('#about').offset().top;
              } else if ( location.hash  == "#about"){
-               animateScrollTop( $('#services').offset().top , 300, 'services');
+               animateScrollTop( $('#product').offset().top , 300, 'product');
                //myScrollTo('services');
-               lastScrollTop = $('#services').offset().top;
-             } else if ( location.hash == '#services') {
+               lastScrollTop = $('#product').offset().top;
+             } else if ( location.hash == '#product') {
+               animateScrollTop( $('#process').offset().top , 300, 'process');
+               //myScrollTo('contact');
+               lastScrollTop = $('#process').offset().top;
+             } else if ( location.hash == '#process') {
                animateScrollTop( $('#contact').offset().top , 300, 'contact');
                //myScrollTo('contact');
                lastScrollTop = $('#contact').offset().top;
-             } else if (location.hash == '#contact') {
+             }  else if (location.hash == '#contact') {
               animateScrollTop( $('#contact').offset().top , 300, 'contact');
               //myScrollTo('contact');
               lastScrollTop = $('#contact').offset().top;

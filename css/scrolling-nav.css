@@ -38,7 +38,7 @@ of those sections to manage the look and feel of the site. */
 .intro-section {
     height: 100%;
     width: 100%;
-    background-image: url("../images/meat2.jpg");
+    background-image: url("../img/meat2.jpg");
     background-position: center center;
     overflow: hidden;
     text-align: center;
@@ -50,7 +50,7 @@ of those sections to manage the look and feel of the site. */
 .about-section {
     height: 100%;
     width: 100%;
-    background-image: url("../images/IMG_0556.JPG");
+    background-image: url("../img/IMG_0556.JPG");
     background-position: center center;
     overflow: hidden;
     text-align: center;
@@ -66,7 +66,7 @@ of those sections to manage the look and feel of the site. */
 .process-section {
     height: 100%;
     width: 100%;
-    background-image: url("../images/IMG_1044 (1).jpeg");
+    background-image: url("../img/IMG_1044 (1).jpeg");
     background-position: center center;
     overflow: hidden;
     text-align: center;
