@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href="http://fiddle.jshell.net/css/result-light.css">
     <link rel="stylesheet" type="text/css" href="css/scrolling-nav.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     
@@ -23,11 +24,12 @@
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
-<body id="page-top" data-spy="scroll" data-target=".myScrollspy">
+<body data-spy="scroll" data-target=".myScrollspy">
 
    <!--navigation bar start -->
-    <nav class="navbar navbar-default navbar-fixed-top myTopNavbar" role="navigation">
-      <div class="container">
+    <!-- <nav class="navbar navbar-default navbar-fixed-top myTopNavbar header" role="navigation"> -->
+      <div class="container-fluids">
+        <div class="header">
         <div class="navbar-header page-scroll">
           <button onclick="myNavSlider()" type="button"  class="slideout_button navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -35,15 +37,15 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="#page-top" class="navbar-brand page-scroll"><img src="img/logo_transparent1.png" style></a>
+          <a href="#home" class="navbar-brand page-scroll"><img src="img/logo_transparent1.png" style></a>
         </div>
-
+    
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse myScrollspy myCollapse">
-          <ul class="nav navbar-nav">
+          <ul id="myMenu" class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
-                        <a class="page-scroll" href="#page-top"></a>
+                        <a class="page-scroll" href="#"></a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#about">About</a>
@@ -59,8 +61,9 @@
                     </li>
                 </ul>
         </div><!-- /.navbar-collapse -->
+        </div>
       </div><!-- /.container-fluid -->
-    </nav>
+    <!-- </nav> -->
     <!--navigation bar end -->
 
     <div class="container-fluid">
@@ -68,16 +71,16 @@
         <nav id="slideout_menu" class="myScrollspy">
           <ul class="nav nav-pills nav-stacked">
             <li><a href="#">Blank one </a> </li>
-            <li><a href="#intro">Intro</a></li>
+            <li><a href="#home">Intro</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#product">Product</a></li>
             <li><a href="#process">Process</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-        <div id="slideout_left">
+        <div id="fullpage">
            <!-- Intro Section -->
-          <section id="intro" class="intro-section">
+          <section data-anchor="home" class="intro-section section">
               <div class="container-fluid myFullHeight">
                   <div class="row intro-section-inner">
                       <!-- <img src="images/meat2.jpg" class="intro_background_img" alt="longanPic"> -->
@@ -90,7 +93,7 @@
               </div>
           </section>
           <!-- About Section -->
-          <section id="about" class="about-section">
+          <section data-anchor="about" class="about-section section">
               <div class="container-fluid">
                   <div class="row">
                       <div class="col-lg-12 myCenter">
@@ -100,7 +103,7 @@
               </div>
           </section>
          <!-- Product Section -->
-          <section id="product" class="product-section">
+          <section data-anchor="product" class="product-section section">
               <!-- <div class="container-fluid "> -->
                 <header id="myCarousel" class="carousel slide">
                     <!-- Indicators -->
@@ -148,7 +151,7 @@
               <!-- </div> -->
           </section>
           <!-- Process Section -->
-          <section id="process" class="process-section">
+          <section data-anchor="process" class="process-section section">
               <div class="container-fluid">
                   <div class="row">
                       <div class="col-lg-12  myCenter">
@@ -158,7 +161,7 @@
               </div>
           </section>
           <!-- Contact Section -->
-          <section id="contact" class="contact-section">
+          <section data-anchor="product" class="contact-section section">
               <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -224,13 +227,15 @@
     <!-- jQuery -->
     <script src="http://code.jquery.com/jquery-1.12.1.min.js"> </script>
     <!-- Scrolling Nav JavaScript -->
-    <script type='text/javascript' src="js/jquery.easing.min.js"></script>
-    <script type='text/javascript' src="js/scrolling-nav.js"></script>
-<!-- Latest compiled and minified JavaScript -->
+    <!-- <script type='text/javascript' src="js/jquery.easing.min.js"></script> -->
+    <!-- <script type='text/javascript' src="js/scrolling-nav.js"></script> -->
+    <!-- Latest compiled and minified JavaScript -->
     <script type='text/javascript' src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>    
+    <!-- FullPage Javascript -->
+    <script type='text/javascript' src="js/jquery.fullPage.min.js"></script>
     <!-- Custom Javascript -->
-    <script type='text/javascript' src="js/main.js"></script>
-    
+    <script type='text/javascript' src="js/main.js"></script>    
+   
 </body>
 
 </html>
