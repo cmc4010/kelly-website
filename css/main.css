@@ -68,7 +68,7 @@ body {
   font-size: 30px;
 }
 .about-section .myCenter {
-  border-style: solid;
+  border: 1px solid gray;
   position: absolute;
   left: 50px;
   top: 30%;
@@ -82,7 +82,7 @@ body {
   border-radius: 10px; 
 }
 .process-section .myCenter {
-  border-style: solid;
+  border: 1px solid gray;
   position: absolute;
   left: 50px;
   top: 30%;
@@ -93,7 +93,6 @@ body {
   opacity: 1;
   text-align: center;
   font-size: 30px;
-  border-radius: 10px; 
 }
 .navbar-brand > img {
  margin-top: -8px !important;
@@ -151,12 +150,11 @@ body {
   font-size: 100px;
 }
 
-.item div{
-  border: solid #aaa 2px;
-  background-color:   #A6373F;
+.carousel-caption{
+  background-color: #AB6363;
   border-radius: 10px;
 }
-.item h2, h3, h4 {
+.carousel-caption h2, h3, h4 {
   color: white;
   text-shadow: none;
 }
@@ -171,7 +169,7 @@ body {
 
 .bigicon {
   font-size: 35px;
-  color: #FF8000;
+  color: #EA0000;
 }
 
 .currentPage {
@@ -204,24 +202,23 @@ body {
 }
  
 .btn-primary {
-    background: #FF9224;
+    background: #FF0000;
     color: #ffffff;
 }
  
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
-    background: #FF8000;
+    background: #EA0000;
 }
  
 .btn-primary:active, .btn-primary.active {
-    background: #EA7500 !important;
+    background: #CE0000 !important;
     box-shadow: none;
 }
 /*button*/
 footer {
   position: absolute;
-  border-top: solid 1px grey;
-  background-color:#5E4D00;
   height: 35px;
-  color: white;
+  bottom: 0px !important;
+  color: gray;
   text-align: right;
 }

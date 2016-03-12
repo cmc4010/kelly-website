@@ -26,7 +26,7 @@
 
 <body data-spy="scroll" data-target=".myScrollspy">
 
-    <nav class="navbar navbar-default navbar-fixed-top myTopNavbar" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top myTopNavbar myScrollspy" role="navigation">
       <div class="container">
         <div class="navbar-header page-scroll">
           <!-- <button type="button"  onclick="myNavSlider()" class="slideout_button navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -39,7 +39,7 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse myScrollspy myCollapse">
+        <div class="collapse navbar-collapse navbar-ex1-collapse myCollapse ">
           <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
@@ -152,10 +152,10 @@
           </section>
           <!-- Contact Section -->
           <section data-anchor="product" class="contact-section section">
-              <div class="container">
-                <div class="row">
+              <div class="container-fluid" >
+                <div class="row" >
                     <div class="col-md-12">
-                        <div class="well well-sm">
+                        <div class="well">
                             <form class="form-horizontal" method="post">
                                 <fieldset>
                                     <legend class="text-center header">Contact us</legend>
@@ -199,6 +199,9 @@
                                             <button type="submit" class="btn btn-primary btn-lg">Submit</button>
                                         </div>
                                     </div>
+                                    <footer class="col-xs-12">
+                                      <p>&copy;2016 Kelly Agro-Products Co., Ltd. All Rights Reserved. </p>
+                                    </footer>
                                 </fieldset>
                             </form>
                         </div>
@@ -207,9 +210,7 @@
             </div>
           </section>
 
-          <footer class="col-xs-12">
-            <p>&copy;2016 Kelly Agro-Products Co., Ltd. All Rights Reserved. </p>
-          </footer>
+          
         </div>
       </div>
     </div>

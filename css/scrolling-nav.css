@@ -35,6 +35,12 @@ html {
         height: 8px !important;
         margin: -4px 0px 0px -4px !important;
     }
+    .icon-prev {
+        color: transparent !important;
+    }
+    .icon-next {
+        color: transparent !important;
+    }
 }
 
 @media(min-width:767px) {
@@ -81,7 +87,7 @@ of those sections to manage the look and feel of the site. */
 .product-section {
     height: 100%;
     width: 100%;
-    background:   #7C151D;
+    background: #D2ACAC;
 
 }
 .process-section {
@@ -103,7 +109,7 @@ of those sections to manage the look and feel of the site. */
 
 .contact-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 100px;
     text-align: center;
     background: #eee;
 }
