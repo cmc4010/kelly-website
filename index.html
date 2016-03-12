@@ -26,26 +26,27 @@
 
 <body data-spy="scroll" data-target=".myScrollspy">
 
-   <!--navigation bar start -->
-    <!-- <nav class="navbar navbar-default navbar-fixed-top myTopNavbar header" role="navigation"> -->
-      <div class="container-fluids">
-        <div class="header">
+    <nav class="navbar navbar-default navbar-fixed-top myTopNavbar" role="navigation">
+      <div class="container">
         <div class="navbar-header page-scroll">
-          <button onclick="myNavSlider()" type="button"  class="slideout_button navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <!-- <button type="button"  onclick="myNavSlider()" class="slideout_button navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button>
+          </button> -->
           <a href="#home" class="navbar-brand page-scroll"><img src="img/logo_transparent1.png" style></a>
         </div>
-    
+
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse myScrollspy myCollapse">
-          <ul id="myMenu" class="nav navbar-nav">
+          <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
                         <a class="page-scroll" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#home">Home</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#about">About</a>
@@ -61,23 +62,21 @@
                     </li>
                 </ul>
         </div><!-- /.navbar-collapse -->
-        </div>
       </div><!-- /.container-fluid -->
-    <!-- </nav> -->
-    <!--navigation bar end -->
+    </nav>
 
     <div class="container-fluid">
       <div class="row">
-        <nav id="slideout_menu" class="myScrollspy">
+        <!-- <nav id="slideout_menu" class="myScrollspy">
           <ul class="nav nav-pills nav-stacked">
             <li><a href="#">Blank one </a> </li>
-            <li><a href="#home">Intro</a></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#product">Product</a></li>
             <li><a href="#process">Process</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-        </nav>
+        </nav> -->
         <div id="fullpage">
            <!-- Intro Section -->
           <section data-anchor="home" class="intro-section section">
