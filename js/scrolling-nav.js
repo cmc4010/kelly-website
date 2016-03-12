@@ -10,10 +10,15 @@ $(window).scroll(function() {
 //jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
+        scrollFlag = 0;
+        lastCall = Date.now();
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
+        }, 1500, 'easeInOutExpo', function(){
+            location.hash = $anchor.attr('href');
+             scrollFlag = 1;
+        });
         event.preventDefault();
     });
 });

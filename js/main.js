@@ -37,6 +37,7 @@ reset_slideout();
 var lastScrollTop = 0; // previous position of view
 var currentScrollTop = 0; // current position of view
 var lastCall = 0; // time of last call
+var scrollFlag = 1;
 
 function myScrollTo(hash) {
   location.hash = "#" + hash;
@@ -50,7 +51,7 @@ $(window).scroll(function(){
 
     currentScrollTop = $(window).scrollTop(); 
 
-     if(lastScrollTop > currentScrollTop){ // scrolling up
+     if(lastScrollTop > currentScrollTop && scrollFlag == 1){ // scrolling up
        if( location.hash == "#intro" || location.hash == ""){
          animateScrollTop(0, 300, '');
            //myScrollTo('');
@@ -74,7 +75,7 @@ $(window).scroll(function(){
          } else {
           alert('something went wrong 1');
         }
-     } else if (lastScrollTop < currentScrollTop) { // scrolling down
+     } else if (lastScrollTop < currentScrollTop && scrollFlag == 1) { // scrolling down
        if( location.hash == "#intro" || location.hash == ""){
          animateScrollTop( $('#about').offset().top, 300, 'about');
            //myScrollTo('about');
