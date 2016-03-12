@@ -175,6 +175,22 @@ body {
   color: #36A0FF;
 }
 
+.currentPage {
+    position:fixed;
+    left: 70%;
+    top: 10px;
+    display:block;
+    font-size:26px;
+    color:white;
+    content: "Home";
+}
+
+@media screen and (min-width: 768px){
+    .currentPage {
+        display:none !important; 
+    }
+}
+
 footer {
   position: absolute;
   border-top: solid 1px grey;
