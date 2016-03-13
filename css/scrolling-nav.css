@@ -13,6 +13,12 @@ html {
     width: 100%;
     height: 100%;
 }
+@media(max-width: 766px) {
+    .carousel-caption h1, h2, h3, h4 {
+  /*font-family: "Yu Gothic", SimHei;*/
+      font-size: 22px !important;
+   }
+}
 
 @media(max-width: 766px) {
     #fp-nav ul li a.active span,
