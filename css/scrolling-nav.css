@@ -41,6 +41,20 @@ html {
     .icon-next {
         color: transparent !important;
     }
+    .about-section .myCenter {
+      top: 20% !important;
+      left: 20px !important;
+      width: 70% !important;
+      padding: 10px !important;
+      font-size: 20px !important;
+    }
+    .process-section .myCenter {
+      top: 10% !important;
+      left: 20px !important;
+      width: 70% !important;
+      padding: 10px !important;
+      font-size: 20px !important;
+    }
 }
 
 @media(min-width:767px) {
@@ -55,7 +69,14 @@ html {
     }
 
 }
-
+@font-face {
+    font-family: monsterBlack;
+    src: url(../fonts/montserrat/Montserrat-Black.otf);
+}
+@font-face {
+    font-family: monsterBlackRegular;
+    src: url(../fonts/montserrat/Montserrat-Regular.otf);
+}
 
 
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
@@ -70,7 +91,8 @@ of those sections to manage the look and feel of the site. */
     overflow: hidden;
     text-align: center;
     background-size: cover; 
-
+    /*font-family: Meiryo, "微軟正黑體", "Microsoft JhengHei"; */
+    font-family: monsterBlack;
     /*position: absolute;*/
 }
 
@@ -82,13 +104,19 @@ of those sections to manage the look and feel of the site. */
     overflow: hidden;
     text-align: center;
     background-size: cover; 
+    font-family: monsterBlackRegular;
+    /*font-family: Meiryo, "微軟正黑體", "Microsoft JhengHei"; */
+}
+.about-section p {
+    font-size: 18px;
 }
 
 .product-section {
     height: 100%;
     width: 100%;
-    background: #D2ACAC;
-
+    background: #804040;
+    font-family: monsterBlackRegular;
+    /*font-family: Meiryo, "微軟正黑體", "Microsoft JhengHei"; */
 }
 .process-section {
     height: 100%;
@@ -98,7 +126,14 @@ of those sections to manage the look and feel of the site. */
     overflow: hidden;
     text-align: center;
     background-size: cover; 
+    font-family: monsterBlackRegular;
+    /*font-family: Meiryo, "微軟正黑體", "Microsoft JhengHei"; */
 }
+
+.process-section p {
+    font-size: 14px;
+}
+
 .process_background_img{
     left: 0;
     position: absolute;
@@ -112,4 +147,6 @@ of those sections to manage the look and feel of the site. */
     padding-top: 100px;
     text-align: center;
     background: #eee;
+    font-family: monsterBlackRegular;
+    /*font-family: Meiryo, "微軟正黑體", "Microsoft JhengHei"; */
 }

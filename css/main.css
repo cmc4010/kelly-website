@@ -52,11 +52,13 @@ body {
 }
 .myTopNavbar{
   background-color:#750000;
-
+  font-family: monsterBlackRegular;
 }
 .myTopNavbar a{
   color: white!important;
   font-size: 20px;
+  font-family: "malgun gothic", simhei; 
+  font-weight: bold;
 }
 .intro-section .myCenter {
   position: absolute;
@@ -67,17 +69,21 @@ body {
   text-align: center;
   font-size: 30px;
 }
+.about-section h1 {
+  text-align: center;
+}
 .about-section .myCenter {
   border: 1px solid gray;
   position: absolute;
   left: 50px;
   top: 30%;
   width: 50%;
-  height: 50%;
+  padding: 20px;
+  /*height: 50%;*/
   color:  #F0F0F0;
   background-color: #804040;
   opacity: 1;
-  text-align: center;
+  text-align: left;
   font-size: 30px;
   border-radius: 10px; 
 }
@@ -87,12 +93,14 @@ body {
   left: 50px;
   top: 30%;
   width: 50%;
-  height: 50%;
+  padding: 20px;
+  /*height: 50%;*/
   color:  #F0F0F0;
-  background-color:  #804040;
+  background-color: #804040;
   opacity: 1;
-  text-align: center;
+  text-align: left;
   font-size: 30px;
+  border-radius: 10px; 
 }
 .navbar-brand > img {
  margin-top: -8px !important;
@@ -155,14 +163,16 @@ body {
   border-radius: 10px;
 }
 .carousel-caption h2, h3, h4 {
+  /*font-family: "Yu Gothic", SimHei;*/
+  font-family: monsterBlackRegular;
   color: white;
   text-shadow: none;
 }
 .header {
-  position:fixed;
-  top: 0;
+  position: relative;
+  top: 0px;
   z-index: 10;
-  color: #36A0FF;
+  color: #CE0000;
   font-size: 27px;
   padding: 10px;
 }
