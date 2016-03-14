@@ -64,6 +64,16 @@ html {
     .header {
       display: none !important;
     }
+    .moveThisFucker {
+      top: 50px !important;
+    }
+    .carousel-control .icon-next {
+      top: 80% !important;
+    }
+
+    .carousel-control .icon-prev {
+      top: 80% !important;
+    }
 }
 
 @media(min-width:767px) {
@@ -107,6 +117,11 @@ of those sections to manage the look and feel of the site. */
     /*position: absolute;*/
 }
 
+.intro-section p {
+    margin-top:10px;
+    margin-bottom:20px;
+}
+
 .about-section {
     height: 100%;
     width: 100%;
@@ -117,9 +132,6 @@ of those sections to manage the look and feel of the site. */
     background-size: cover; 
     font-family: monsterBlackRegular;
     /*font-family: Meiryo, "微軟正黑體", "Microsoft JhengHei"; */
-}
-.about-section p {
-    font-size: 18px;
 }
 
 .product-section {
@@ -141,9 +153,6 @@ of those sections to manage the look and feel of the site. */
     /*font-family: Meiryo, "微軟正黑體", "Microsoft JhengHei"; */
 }
 
-.process-section p {
-    font-size: 14px;
-}
 
 .process_background_img{
     left: 0;
