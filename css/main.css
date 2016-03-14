@@ -9,16 +9,15 @@ body {
 
 .myTopNavbar{
   background-color:#750000;
-  font-family: monsterBlackRegular;
 }
 .myTopNavbar a{
   color: white!important;
   font-size: 20px;
-  font-family: "malgun gothic", simhei; 
+  font-family: monsterBlackRegular;
   font-weight: bold;
 }
 .myTopNavbar a:hover{
-  color: grey !important;
+  color:  #FF9224 !important;
 }
 .intro-section .myCenter {
   position: absolute;
@@ -146,6 +145,7 @@ body {
 .moveThisFucker {
   position: relative !important; 
   top: 100px;
+  background: #F2E6E6;
 }
 
 .myFullHeight {
