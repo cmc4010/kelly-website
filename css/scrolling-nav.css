@@ -55,6 +55,9 @@ html {
       padding: 10px !important;
       font-size: 20px !important;
     }
+    .header {
+      display: none !important;
+    }
 }
 
 @media(min-width:767px) {
@@ -84,8 +87,10 @@ The padding is very important to make sure the scrollspy picks up the right area
 of those sections to manage the look and feel of the site. */
 
 .intro-section {
+    position: absolute;
     height: 100%;
     width: 100%;
+    top: 0px;
     background-image: url("../img/meat2.jpg");
     background-position: center center;
     overflow: hidden;
@@ -143,8 +148,8 @@ of those sections to manage the look and feel of the site. */
 
 
 .contact-section {
+    display: none;
     height: 100%;
-    padding-top: 100px;
     text-align: center;
     background: #eee;
     font-family: monsterBlackRegular;

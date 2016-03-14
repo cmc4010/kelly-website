@@ -5,51 +5,8 @@
 body {
   overflow: scroll;
 }
-#slideout_menubar {
-  width:100%;
-  background-color:#444;
-  color: #fff;
-  padding: 10px;
-  text-align: right;
-}
-.slideout_button {
-  cursor:pointer;
-  padding:auto;
-}
-#slideout_menu, #slideout_left {
-  display:inline;
-}
-#slideout_menu li a {
-  padding: 10px;
-  display: block;
-  color: white;
-  text-decoration: none;
-}
-#slideout_left {
-  width:100%;
-/*   background-color: #fff; */
-  z-index: 5;
-  right: 10px;
-  height: 100%;
-  position: absolute;
-/*   -webkit-box-shadow:  -5px 0px 4px 0px rgba(0, 0, 0, 0.2);
-  moz-box-shadow:  -5px 0px 4px 0px rgba(0, 0, 0, 0.2);
-  o-box-shadow:  -5px 0px 4px 0px rgba(0, 0, 0, 0.2);
-  box-shadow:  -5px 0px 4px 0px rgba(0, 0, 0, 0.2); */
-}
-#slideout_left p {
-  padding: 10px;
-}
-#slideout_menu {
-  right:0px;
-  z-index: -1;
-  text-align: right;
-  position: fixed;
-} 
-#slideout_menu li {
-  background-color:green;
-  border-bottom: 1px solid #888;
-}
+
+
 .myTopNavbar{
   background-color:#750000;
   font-family: monsterBlackRegular;
@@ -103,14 +60,14 @@ body {
   border-radius: 10px; 
 }
 .navbar-brand > img {
- margin-top: -8px !important;
- max-height: 180%;
- height: 180%;
- width: auto;
- margin: 0 auto;
- /* probably not needed anymore, but doesn't hurt */
- -o-object-fit: contain;
- object-fit: contain; 
+   margin-top: -8px !important;
+   max-height: 180%;
+   height: 180%;
+   width: auto;
+   margin: 0 auto;
+   /* probably not needed anymore, but doesn't hurt */
+   -o-object-fit: contain;
+   object-fit: contain; 
 
 }
 .myGrayScale {
@@ -170,11 +127,19 @@ body {
 }
 .header {
   position: relative;
-  top: 0px;
   z-index: 10;
   color: #CE0000;
   font-size: 27px;
-  padding: 10px;
+  /*padding: 10px;*/
+}
+
+.moveThisFucker {
+  position: relative !important; 
+  top: 100px
+}
+
+.myFullHeight {
+  height: 100%;
 }
 
 .bigicon {
