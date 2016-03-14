@@ -116,11 +116,13 @@ body {
 }
 
 .carousel-caption{
+  margin-bottom: 2% ;
   background-color: #AB6363;
   border-radius: 10px;
 }
-.carousel-caption h2, h3, h4 {
+.carousel-caption h1, h2, h3, h4 {
   /*font-family: "Yu Gothic", SimHei;*/
+  font-size: 30px;
   font-family: monsterBlackRegular;
   color: white;
   text-shadow: none;
@@ -155,11 +157,12 @@ body {
     font-size:26px;
     color:white;
     content: "Home";
+    opacity: 0;
 }
 
 @media screen and (min-width: 768px){
     .currentPage {
-        display:none !important; 
+        opacity: 0;
     }
 }
 
