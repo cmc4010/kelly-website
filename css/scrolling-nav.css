@@ -14,9 +14,12 @@ html {
     height: 100%;
 }
 @media(max-width: 766px) {
-    .carousel-caption h1, h2, h3, h4 {
+    .caption {
+        padding: 10px !important;
+    }
+    .caption h1, h2, h3, h4 {
   /*font-family: "Yu Gothic", SimHei;*/
-      font-size: 22px !important;
+      font-size: 20px !important;
    }
 }
 
@@ -55,12 +58,13 @@ html {
       font-size: 20px !important;
     }
     .process-section .myCenter {
-      top: 10% !important;
+      top: 20% !important;
       left: 20px !important;
       width: 70% !important;
       padding: 10px !important;
       font-size: 20px !important;
     }
+
     .header {
       display: none !important;
     }
@@ -73,6 +77,35 @@ html {
 
     .carousel-control .icon-prev {
       top: 80% !important;
+    }
+    .moveThisFucker {
+      background: #F2E6E6 !important;
+    }
+    .contact-section {
+        background: #eee !important;
+    }
+    .about-section p {
+        font-size: 15px !important;
+        text-align: left !important;
+    }
+    .about-section h1 {
+        font-size: 20px !important; 
+    }
+    .about-section .highlightOrange {
+        font-size: 24px !important; 
+    }
+    .about-section .highlightGreen {
+        font-size: 24px !important; 
+    }
+    .intro-section .myCenter {
+      top: 30% !important;
+    }
+    .process-section p {
+        font-size: 15px !important;
+        text-align: left !important;
+    }
+    .process-section h1 {
+        font-size: 20px !important; 
     }
 }
 
@@ -166,7 +199,7 @@ of those sections to manage the look and feel of the site. */
     display: none;
     height: 100%;
     text-align: center;
-    background: #eee;
+    background: #F2E6E6;
     font-family: monsterBlackRegular;
     /*font-family: Meiryo, "微軟正黑體", "Microsoft JhengHei"; */
 }

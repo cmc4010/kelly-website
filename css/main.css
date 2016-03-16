@@ -30,15 +30,57 @@ body {
 }
 .about-section h1 {
   text-align: center;
+  font-size: 34px;
+  color: white;
+  /* font-size: 25px; */
+  /* font-size: 3vw; */
+}
+.about-section p {
+    text-align: center;
+    font-size: 22px;
+    /* font-size: 0.9vw; */
+    color:#eee;
+    /* margin-bottom: 10px; */
+    /* color:rgb(250,250,250); */
+}
+.about-section .highlightOrange {
+    font-size: 40px; 
+    /* font-size: 30px; */
+    /* font-size: 3vw; */
+    color: #FFA600;
+}
+.about-section .highlightGreen {
+    /* font-size: 40px; */
+    color:#009900;
 }
 .about-section .myCenter {
   border: 1px solid gray;
   position: absolute;
-  left: 50px;
+  /* left: 50px; */
+  left: 10%;
+  top: 30%;
+  width: 40%;
+  padding: 20px;
+  padding-bottom: 40px;
+  /* height: 40%; */
+  color:  #F0F0F0;
+  /* color: black; */
+  background-color: #804040;
+  /* background-color:rgb(252,252,252); */
+  opacity: 1;
+  text-align: left;
+  font-size: 18px;
+  overflow:hidden;
+  /* border-radius: 10px;  */
+}
+.process-section .myCenter {
+  border: 1px solid gray;
+  position: absolute;
+  left: 10%;
   top: 30%;
   width: 50%;
   padding: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   /*height: 50%;*/
   color:  #F0F0F0;
   background-color: #804040;
@@ -47,21 +89,26 @@ body {
   font-size: 18px;
   border-radius: 10px; 
 }
-.process-section .myCenter {
-  border: 1px solid gray;
-  position: absolute;
-  left: 50px;
-  top: 30%;
-  width: 50%;
-  padding: 20px;
-  padding-bottom: 40px;
-  /*height: 50%;*/
-  color:  #F0F0F0;
-  background-color: #804040;
-  opacity: 1;
-  text-align: left;
-  font-size: 18px;
-  border-radius: 10px; 
+.process-section h1{
+  text-align: center;
+  font-size: 34px;
+  color: white;
+}
+.process-section p {
+    text-align: center;
+    font-size: 22px;
+    color:#eee;
+}
+#processBtn {
+    color:black;
+    background-color: rgb(252,252,252);
+    border:none;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    border-radius:3px;
+}
+#processBtn:hover {
+    background-color: orange;
 }
 .navbar-brand > img {
    margin-top: -8px !important;
@@ -119,20 +166,25 @@ body {
   font-size: 100px;
 }
 
-.carousel-caption{
+.caption{
+  margin-left:auto;
+  margin-right:auto;
+  position:absolute;
   top: 85% ;
   left: 25%;
-  height: 10%;
+  /* height: 10%; */
   width: 50%;
   background-color: #AB6363;
   border-radius: 10px;
+  padding:10px;
 }
-.carousel-caption h1, h2, h3, h4 {
+.caption h1, h2, h3, h4 {
   /*font-family: "Yu Gothic", SimHei;*/
   font-size: 30px;
   font-family: monsterBlackRegular;
   color: white;
   text-shadow: none;
+  text-align:center;
 }
 .header {
   position: relative;
@@ -145,7 +197,7 @@ body {
 .moveThisFucker {
   position: relative !important; 
   top: 100px;
-  background: #F2E6E6;
+  background: #eee;
 }
 
 .myFullHeight {
@@ -157,6 +209,7 @@ body {
   color: #EA0000;
 }
 
+/* Displays site anchor at the top right corner */
 .currentPage {
     position:fixed;
     left: 70%;
