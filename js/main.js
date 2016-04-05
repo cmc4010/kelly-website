@@ -34,7 +34,8 @@ $(document).ready(function() {
                  $('#currentPage').css(
                     {"display":"block", "color":"white", 
                     "position":"fixed", "left":"70%",
-                    "top":"10px", "font-size":"26px"
+                    "top":"10px", "font-size":"26px",
+                    "z-index":"-1"
                     });
                 $('#currentPage').animate({opacity:1}, 400);           
             } else {
