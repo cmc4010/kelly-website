@@ -44,11 +44,11 @@ $(document).ready(function() {
         afterLoad: function(anchorLink, index){
             var curP = $('#currentPage');
             var w = $(window).width();
-                $('#currentPage').css(
-                   {"display":"block", "color":"white", 
-                   "position":"fixed", "left":"70%",
-                   "top":"10px", "font-size":"26px"
-                   });
+                // $('#currentPage').css(
+                //    {"display":"block", "color":"white", 
+                //    "position":"fixed", "left":"70%",
+                //    "top":"10px", "font-size":"26px"
+                //    });
             if(w < 768){
                 $('#currentPage').animate({opacity:1}, 400);
             }
