@@ -31,12 +31,11 @@ $(document).ready(function() {
             $('#currentPage').html("Home");
             var w = $(window).width();
             if(w < 768) {
-                 $('#currentPage').css(
-                    {"display":"block", "color":"white", 
-                    "position":"fixed", "left":"70%",
-                    "top":"10px", "font-size":"26px",
-                    "z-index":"-1"
-                    });
+                 // $('#currentPage').css(
+                 //    {"display":"block", "color":"white", 
+                 //    "position":"fixed", "left":"70%",
+                 //    "top":"10px", "font-size":"26px"
+                 //    });
                 $('#currentPage').animate({opacity:1}, 400);           
             } else {
                 $('#currentPage').animate({opacity:0}, 400);
