@@ -7,6 +7,7 @@
 * [jQuery](https://jquery.com/)
 * [Bootstrap](http://getbootstrap.com/)
 * [Start Bootstrap](http://startbootstrap.com/)
+* [Fullpage](http://alvarotrigo.com/fullPage/)
 
 ## Copyright and License
 
